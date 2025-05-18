@@ -42,7 +42,7 @@ def calculate_rap(userid):
         elif limiteds["errors"][0]["code"] == 1:
             print("User doesnt exist")
         else:
-            print("Unknown error probably ratelimiting or some shit")
+            print("Unknown error")
         rap = -1
     elif "data" in limiteds:
         if len(limiteds["data"]) > 0:
@@ -66,7 +66,7 @@ def calculate_rap(userid):
             elif limiteds["errors"][0]["code"] == 1:
                 print("User doesnt exist")
             else:
-                print("Unknown error probably ratelimiting or some shit")
+                print("Unknown error")
             rap = -1
         elif "data" in limiteds:
             if len(limiteds["data"]) > 0:
